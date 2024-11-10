@@ -253,3 +253,32 @@ graph LR;
 `git diff a9928ab 11bada1` — выведи разницу между двумя коммитами;
 
 `git diff --staged` — покажи изменения, которые добавлены в `staged`\-файлах.
+
+### .gitignore
+
+```bash
+# игнорировать все файлы
+**
+
+# кроме .tex и .pdf
+!**.tex
+!**.pdf
+```
+
+```git status --ignored```
+
+```bash
+gl-1g | egrep '[0-9]{4}-' | wc;
+```
+
+### Клонируем репозиторий
+
+```bash
+git clone https://github.com/yandex-praktikum/git-clone-lesson /d/Doc/Dvl/Prj/Stu/Ya.Ws/Git/ts
+```
+
+### Ветки в Git 
+
+Чтобы создать ветку, необходимо выполнить команду `git branch %BRANCH_NAME%`.
+
+Для перехода в ветку есть команда `git checkout %BRANCH_NAME%`.
