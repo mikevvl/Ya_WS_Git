@@ -2,11 +2,17 @@
 
 ## Lnk
 
-[Covenants - Comm:KW(rfc2119)](https://datatracker.ietf.org/doc/html/rfc2119 "Key words for use in RFCs to Indicate Requirement Levels")  
+### Covenants
 
+[Comm:KW(rfc2119)](https://datatracker.ietf.org/doc/html/rfc2119 "Key words for use in RFCs to Indicate Requirement Levels")  
+[Semantic Ver](https://semver.org/lang/ru/ "Семантическое Версионирование")  
+[Commit Message Format](https://www.conventionalcommits.org/ru/v1.0.0-beta.4/ "Commit Message Format")  
+[Commit Message Format(Angular)](https://github.com/angular/angular/blob/main/CONTRIBUTING.md#-commit-message-format "Contributing to Angular - Commit Message Format")  
 
-[GH - Beg](https://docs.github.com/ru/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github "Основные сведения о подготовке материалов и форматировании на GitHub")  
-[GH - FMS](https://github.github.com/gfm/ "GitHub Flavored Markdown Spec")  
+### GitHub
+
+[Beg](https://docs.github.com/ru/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github "Основные сведения о подготовке материалов и форматировании на GitHub")  
+[FMS](https://github.github.com/gfm/ "GitHub Flavored Markdown Spec")  
 
 ---
 
