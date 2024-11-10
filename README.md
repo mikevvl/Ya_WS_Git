@@ -12,8 +12,12 @@
 ### GitHub
 
 [Beg](https://docs.github.com/ru/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github "Основные сведения о подготовке материалов и форматировании на GitHub")\
-[FMS](https://github.github.com/gfm/ "GitHub Flavored Markdown Spec")
+[FMS](https://github.github.com/gfm/ "GitHub Flavored Markdown Spec")\
+[Markdown editing with VC#preview](https://code.visualstudio.com/Docs/languages/markdown#_markdown-preview)
 
+### Future
+
+[hash: Fr SHA-1 2 SHA-256](https://git-scm.com/docs/hash-function-transition "hash-function-transition Documentation")
 
 ---
 
@@ -42,7 +46,7 @@ new paragraph~~.
    1. Ordered sub-list
    2. Ordered sub-list 2
 2. And another item.  
-   + Unordered sub-list. 
+   + Unordered sub-list.
    * Unordered sub-list. 
    
         Some text that should be aligned with the above item.
@@ -65,13 +69,11 @@ Some text that should be aligned with the above item.
     -b \pm \sqrt{b^2 - 4ac} \over 2a
     ```
 
-
 * $x = a_0 + \frac{1}{a_1 + \frac{1}{a_2 + \frac{1}{a_3 + a_4}}}$
 
     ```tex
     x = a_0 + \frac{1}{a_1 + \frac{1}{a_2 + \frac{1}{a_3 + a_4}}}
     ```
-
 
 * $\forall x \in X, \quad \exists y \leq \epsilon$
 
@@ -175,7 +177,6 @@ Visit www.commonmark.org.
 
 ## Шпаргалка. Начало работы с Git
 
-
 ### Инициализация репозитория
 
 `git init` (от англ. _**init**ialize_, «инициализировать») — инициализируй репозиторий.
@@ -188,9 +189,22 @@ Visit www.commonmark.org.
 
 `git push -u origin main` (от англ. _push_, «толкать») — в первый раз загрузи все коммиты из локального репозитория в удалённый с названием `origin`.
 
-💡 Ваша ветка может называться `master`, а не `main`. Подправьте команду, если это необходимо.
+* 💡 Ваша ветка может называться `master`, а не `main`. Подправьте команду, если это необходимо.
 
 `git push` (от англ. _push_, «толкать») — загрузи коммиты в удалённый репозиторий после того, как он был привязан с помощью флага `-u`.
+
+### Staging area, index и cache
+
+  **Staging area** также называют **index** (англ. «каталог») или **cache** (англ. «кеш»), а состояние файла `staged` иногда называют `indexed` или `cached`. 
+  Все три варианта могут встречаться в документации и в качестве флагов команд Git. А также в интернете — например, в вопросах и ответах [на сайте Stack Overflow](https://stackoverflow.com/).
+
+```mermaid
+graph LR;
+  untracked -- "git add" --> staged;
+  modified -- "git add" --> staged;
+  staged    -- "git commit"     --> tracked/comitted;
+  staged    -- "edit"     --> modified;
+```
 
 ### Подготовка файла к коммиту
 
@@ -222,7 +236,7 @@ Visit www.commonmark.org.
 
 `git commit --amend -m "Новое сообщение"` — измени сообщение к последнему коммиту на `Новое сообщение`.
 
-💡 Выйти из редактора Vim: нажать `Esc`, ввести `:qa!`, нажать `Enter`.
+* 💡 Выйти из редактора Vim: нажать `Esc`, ввести `:qa!`, нажать `Enter`.
 
 ### «Откат» файлов и коммитов
 
